@@ -1,0 +1,6 @@
+h1{
+    color: rgba(37, 37, 37, 0.774);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
