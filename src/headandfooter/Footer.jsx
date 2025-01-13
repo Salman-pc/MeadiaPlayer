@@ -7,7 +7,7 @@ function Footer() {
     <div
       style={{
         borderTop: "2px solid rgba(255, 255, 255, 0.2)",
-        backgroundColor: "rgba(139, 138, 138, 0.76)",
+        backgroundColor: "rgb(176, 176, 176)",
       }}
       className="mt-2"
     >
