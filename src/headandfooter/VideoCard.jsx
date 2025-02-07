@@ -71,7 +71,7 @@ function VideoCard({ displayData, setvideodeleteResponse, insideCatogory }) {
         </div>
 
         <Card.Body style={{ height: "20%" }}>
-          <Card.Title className="fw-bold text-center" style={{ fontSize: "18px" }}>
+          <Card.Title className="fw-bold text-center" style={{ fontSize: "18px", textTransform: 'capitalize'  }}>
             {displayData?.caption}
           </Card.Title>
         </Card.Body>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaTwitter, FaInstagram, FaFacebook, FaPaperPlane, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -29,19 +30,19 @@ function Footer() {
                 <h5 className="fw-bold text-white">Links</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#!" className="text-white text-decoration-none fw-medium">
+                    <Link to={'/home'} className="text-white text-decoration-none fw-medium">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="my-1">
-                    <a href="#!" className="text-white text-decoration-none fw-medium">
+                    <Link to={'/'} className="text-white text-decoration-none fw-medium">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!" className="text-white text-decoration-none fw-medium">
+                    <Link to={'/history'} className="text-white text-decoration-none fw-medium">
                       History
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </Col>

@@ -12,6 +12,7 @@ function Category({ setDeletevideoresponse, updateCatogoryresponse }) {
 
   const [show, setShow] = useState(false);
   const [allCatogory, setallCatogory] = useState([])
+  
   const [Categorydata, setcategorydata] = useState("")
 
   const handleClose = () => setShow(false);
@@ -121,7 +122,7 @@ function Category({ setDeletevideoresponse, updateCatogoryresponse }) {
 
         <div key={index} onDragOver={(e) => dragOvercatogory(e)} droppable="true" onDrop={(e) => videoDroped(e, item.id)} className='w-100 h-100 d-flex flex-column justify-content-between border p-2'>
           <div className='d-flex text-white border align-items-center fs-5 justify-content-between px-3' style={{ height: "70px" }}>
-            <h5>{item.Categorydata}</h5>
+            <h5 style={{ textTransform: 'capitalize' }}>{item.Categorydata}</h5>
             <Button className='bg-danger border-black'><i onClick={() => deleteCatogory(item.id)} className='fa-solid  fa-trash'></i></Button>
           </div>
           <div className='border mt-2 px-3'>
@@ -134,7 +135,7 @@ function Category({ setDeletevideoresponse, updateCatogoryresponse }) {
                   </div>
                 )}
 
-              </div> : <div className='p-4'><h5 className='text-danger'>Nothing to Display</h5></div>
+              </div> : <div className='p-4'><h5 style={{ textTransform: 'capitalize',color: 'rgba(109, 109, 109, 0.99)' }} >Drag Music To {item.Categorydata} Catogory </h5></div>
             }
           </div>
         </div>
